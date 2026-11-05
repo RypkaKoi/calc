@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Корпус калькулятора */
+.calculator {
+    background-color: #353330; /* Оранжевый цвет */
+    padding: 30px 25px;
+    border-radius: 40px;
+    box-shadow: inset -5px -5px 10px rgba(0,0,0,0.2), 
+                5px 10px 20px rgba(0,0,0,0.15);
+    width: 320px;
+    border: 4px solid #000000;
+}
+
+
+
+/* Экран */
+.display {
+    background-color: #d1f2eb; 
+    color: #2c3e50;
+    font-size: 40px;
+    text-align: right;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 4px solid #a3e4d7;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Сетка кнопок 4х4 */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/*  стили для кнопок */
+.but {
+        background-color: #fef5e7;
+        border: 3px solid #3f3935;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #5d4037;
+        padding: 15px 0;
+        cursor: pointer;
+        outline: none;
+        
+    }
+
+/* Эффект нажатия (для клика мышкой) */
+.but:active, .but.active {
+    transform: translateY(2px);
+}
+
+/* Операторы и специальные кнопки */
+.operator, .equals, .clear {
+    background-color: #fdf2e9;
+}
+
+.clear {
+    color: #c0392b; /* Кнопка Сброса (O) */
+}
